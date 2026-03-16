@@ -1,0 +1,44 @@
+aid: civil-infrastructure-platform
+name: Civil Infrastructure Platform
+description: >-
+  The Civil Infrastructure Platform (CIP) is a Linux Foundation project that establishes an open source base layer of industrial-grade software for civil infrastructure systems. It provides a super long-term supported Linux-based platform that can be maintained for more than 10 years for critical infrastructure.
+type: Index
+position: Consumer
+access: 3rd-Party
+image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+  - Infrastructure
+  - Industrial
+  - Long-Term Support
+  - Linux Foundation
+created: '2026-03-16'
+modified: '2026-03-16'
+url: >-
+  https://raw.githubusercontent.com/api-evangelist/civil-infrastructure-platform/refs/heads/main/apis.yml
+specificationVersion: '0.19'
+apis:
+  - aid: civil-infrastructure-platform:civil-infrastructure-platform-api
+    name: Civil Infrastructure Platform API
+    description: >-
+      Programmatic access to CIP industrial software resources, long-term support tools, and civil infrastructure APIs.
+    humanURL: https://www.cip-project.org/resources
+    tags:
+  - Infrastructure
+  - Industrial
+  - Long-Term Support
+  - Linux Foundation
+    properties:
+      - type: Documentation
+        url: https://www.cip-project.org/resources
+common:
+  - type: Documentation
+    name: Civil Infrastructure Platform Documentation
+    description: Official documentation for Civil Infrastructure Platform.
+    url: https://www.cip-project.org/resources
+  - type: GitHubOrg
+    name: Civil Infrastructure Platform GitHub
+    description: Source code and repositories for Civil Infrastructure Platform.
+    url: https://gitlab.com/cip-project
+maintainers:
+  - FN: Kin Lane
+    email: info@apievangelist.com
