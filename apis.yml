@@ -7,10 +7,10 @@ position: Consumer
 access: 3rd-Party
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 tags:
-  - Infrastructure
   - Industrial
-  - Long-Term Support
+  - Infrastructure
   - Linux Foundation
+  - Long-Term Support
 created: '2026-03-16'
 modified: '2026-03-16'
 url: >-
@@ -23,10 +23,10 @@ apis:
       Programmatic access to CIP industrial software resources, long-term support tools, and civil infrastructure APIs.
     humanURL: https://www.cip-project.org/resources
     tags:
-      - Infrastructure
       - Industrial
-      - Long-Term Support
+      - Infrastructure
       - Linux Foundation
+      - Long-Term Support
     properties:
       - type: Documentation
         url: https://www.cip-project.org/resources
