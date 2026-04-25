@@ -1,0 +1,20 @@
+{
+  "@context": {
+    "@vocab": "https://apievangelist.com/vocab/civil-infrastructure-platform/",
+    "schema": "https://schema.org/",
+    "cip": "https://www.cip-project.org/vocab/",
+    "Project": "schema:Project",
+    "WorkingGroup": "cip:WorkingGroup",
+    "Kernel": "cip:LinuxKernel",
+    "Package": "schema:SoftwareSourceCode",
+    "Release": "cip:KernelRelease",
+    "Standard": "schema:DefinedTerm",
+    "Member": "schema:Organization",
+    "name": "schema:name",
+    "description": "schema:description",
+    "version": "schema:softwareVersion",
+    "supportEnd": "cip:eolDate",
+    "createdAt": "schema:dateCreated",
+    "updatedAt": "schema:dateModified"
+  }
+}

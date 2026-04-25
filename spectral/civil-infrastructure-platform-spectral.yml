@@ -1,0 +1,38 @@
+extends:
+  - spectral:oas
+rules:
+  cip-info-contact:
+    description: API info MUST contain a contact for the maintaining working group.
+    severity: warn
+    given: $.info
+    then:
+      field: contact
+      function: truthy
+  cip-info-license:
+    description: CIP-derived API descriptions SHOULD declare an open source license.
+    severity: warn
+    given: $.info
+    then:
+      field: license
+      function: truthy
+  cip-https-only:
+    description: API servers MUST use HTTPS.
+    severity: error
+    given: $.servers[*].url
+    then:
+      function: pattern
+      functionOptions:
+        match: '^https://'
+  cip-operation-id:
+    description: Operations MUST have an operationId.
+    severity: error
+    given: $.paths[*][get,post,put,delete,patch]
+    then:
+      field: operationId
+      function: truthy
+  cip-tag-required:
+    description: Operations MUST be tagged for working group grouping.
+    severity: warn
+    given: $.paths[*][get,post,put,delete,patch].tags
+    then:
+      function: truthy
