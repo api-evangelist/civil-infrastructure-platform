@@ -126,9 +126,9 @@ common:
   - type: JSON-LD
     url: json-ld/civil-infrastructure-platform-context.jsonld
   - type: Spectral
-    url: spectral/civil-infrastructure-platform-spectral.yml
+    url: rules/civil-infrastructure-platform-rules.yml
   - type: Naftiko Capabilities
-    url: naftiko/civil-infrastructure-platform-capabilities.yml
+    url: capabilities/civil-infrastructure-platform-capabilities.yml
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com

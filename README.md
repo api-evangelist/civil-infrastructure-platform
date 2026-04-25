@@ -74,8 +74,8 @@ Continuous-integration and hardware-in-the-loop testing on member-supplied board
 - [Mailing List](https://lists.cip-project.org/g/cip-dev)
 - [Foundation](https://www.linuxfoundation.org/projects/civil-infrastructure-platform/)
 - [JSON-LD Context](json-ld/civil-infrastructure-platform-context.jsonld)
-- [Spectral Ruleset](spectral/civil-infrastructure-platform-spectral.yml)
-- [Naftiko Capabilities](naftiko/civil-infrastructure-platform-capabilities.yml)
+- [Spectral Ruleset](rules/civil-infrastructure-platform-rules.yml)
+- [Naftiko Capabilities](capabilities/civil-infrastructure-platform-capabilities.yml)
 
 ## Maintainers
 
