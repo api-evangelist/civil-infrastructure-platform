@@ -123,7 +123,7 @@ common:
     url: https://lists.cip-project.org/g/cip-dev
   - type: Foundation
     url: https://www.linuxfoundation.org/projects/civil-infrastructure-platform/
-  - type: JSON-LD
+  - type: JSONLD
     url: json-ld/civil-infrastructure-platform-context.jsonld
   - type: Spectral
     url: rules/civil-infrastructure-platform-rules.yml
