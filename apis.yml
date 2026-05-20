@@ -111,6 +111,8 @@ apis:
       hardware-in-the-loop testing on member-supplied boards to validate
       kernel and core packages against the SLTS branch.
 common:
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/civil-infrastructure-platform
   - type: Website
     url: https://www.cip-project.org/
   - type: Wiki
