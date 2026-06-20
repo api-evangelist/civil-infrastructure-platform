@@ -7,7 +7,7 @@ type: Index
 access: 3rd-Party
 position: Consumer
 specificationVersion: '0.19'
-image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 tags:
   - Embedded
   - Industrial
@@ -36,7 +36,7 @@ apis:
       - Kernel
       - Linux
       - SLTS
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://wiki.linuxfoundation.org/civilinfrastructureplatform/cipkernelmaintenance
     properties:
       - url: https://wiki.linuxfoundation.org/civilinfrastructureplatform/cipkernelmaintenance
@@ -54,7 +54,7 @@ apis:
       - Debian
       - Packages
       - Userspace
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://wiki.linuxfoundation.org/civilinfrastructureplatform/cipcore
     properties:
       - url: https://wiki.linuxfoundation.org/civilinfrastructureplatform/cipcore
@@ -71,7 +71,7 @@ apis:
       - OTA
       - Software Update
       - SWUpdate
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://wiki.linuxfoundation.org/civilinfrastructureplatform/softwareupdate
     properties:
       - url: https://wiki.linuxfoundation.org/civilinfrastructureplatform/softwareupdate
@@ -86,7 +86,7 @@ apis:
       - IEC 62443
       - Industrial Security
       - Security
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://wiki.linuxfoundation.org/civilinfrastructureplatform/cipsecurity
     properties:
       - url: https://wiki.linuxfoundation.org/civilinfrastructureplatform/cipsecurity
@@ -101,7 +101,7 @@ apis:
       - CI
       - LAVA
       - Testing
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://wiki.linuxfoundation.org/civilinfrastructureplatform/ciptesting
     properties:
       - url: https://wiki.linuxfoundation.org/civilinfrastructureplatform/ciptesting
