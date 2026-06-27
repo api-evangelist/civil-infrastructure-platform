@@ -129,7 +129,7 @@ common:
     url: json-ld/civil-infrastructure-platform-context.jsonld
   - type: Spectral
     url: rules/civil-infrastructure-platform-rules.yml
-  - type: Naftiko Capabilities
+  - type: X-NaftikoCapabilities
     url: capabilities/civil-infrastructure-platform-capabilities.yml
 maintainers:
   - FN: Kin Lane
