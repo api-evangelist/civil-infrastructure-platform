@@ -111,6 +111,8 @@ apis:
       hardware-in-the-loop testing on member-supplied boards to validate
       kernel and core packages against the SLTS branch.
 common:
+  - type: DomainSecurity
+    url: security/civil-infrastructure-platform-domain-security.yml
   - type: LinkedIn
     url: https://www.linkedin.com/company/civil-infrastructure-platform
   - type: Website
@@ -131,6 +133,8 @@ common:
     url: rules/civil-infrastructure-platform-rules.yml
   - type: X-NaftikoCapabilities
     url: capabilities/civil-infrastructure-platform-capabilities.yml
+  - url: https://cip-project.org/blog/
+    type: Blog
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
