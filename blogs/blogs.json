@@ -1,0 +1,14 @@
+{
+  "repo": "civil-infrastructure-platform",
+  "feeds": [
+    {
+      "source": "https://cip-project.org/blog/",
+      "feed_url": "https://cip-project.org/feed",
+      "title": "",
+      "saved": 1,
+      "method": "discovered"
+    }
+  ],
+  "fetched": "2026-07-11T11:50:51Z",
+  "post_count": 15
+}
