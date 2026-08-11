@@ -143,8 +143,6 @@ common:
     url: json-ld/civil-infrastructure-platform-context.jsonld
   - type: Spectral
     url: rules/civil-infrastructure-platform-rules.yml
-  - type: X-NaftikoCapabilities
-    url: capabilities/civil-infrastructure-platform-capabilities.yml
   - url: https://cip-project.org/blog/
     type: Blog
 maintainers:
