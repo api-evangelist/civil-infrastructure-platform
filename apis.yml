@@ -28,7 +28,7 @@ created: '2026-03-16'
 modified: '2026-04-23'
 type: Index
 access: 3rd-Party
-position: Consumer
+position: Consuming
 specificationVersion: '0.23'
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/civil-infrastructure-platform.png
 tags:
