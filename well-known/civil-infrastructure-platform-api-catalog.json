@@ -1,0 +1,22 @@
+{
+    "linkset": [
+        {
+            "anchor": "https://cip-project.org/wp-json/",
+            "service-desc": [
+                {
+                    "href": "https://cip-project.org/wp-json/"
+                }
+            ],
+            "service-doc": [
+                {
+                    "href": "https://developer.wordpress.org/rest-api/"
+                }
+            ],
+            "status": [
+                {
+                    "href": "https://cip-project.org"
+                }
+            ]
+        }
+    ]
+}

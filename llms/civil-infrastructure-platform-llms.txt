@@ -1,0 +1,45 @@
+# Civil Infrastructure Platform
+
+## Posts
+- [A Decade of Stability: 10 Years of the CIP Kernel WG](https://cip-project.org/blog/2026/08/06/a-decade-of-stability-10-years-of-the-cip-kernel-wg): Author: Nobuhiro Iwamatsu, Toshiba Introduction CIP (Civil Infrastructure Platform) was launched in 2016 under the Linux Foundation and has been
+- [Civil Infrastructure Platform Achieves OpenSSF Best Practices Gold Badge](https://cip-project.org/blog/2026/07/22/civil-infrastructure-platform-achieves-openssf-best-practices-gold-badge): Author: Kamlesh Gurudasani, Texas Instruments The Achievement In February 2026, the Civil Infrastructure Platform (CIP) project earned the OpenSSF Best
+- [“Trust in Longevity”: How Cybertrust leverages CIP to Provide Enterprise-Grade Support and Security for Industrial-Grade Linux Distributions.](https://cip-project.org/blog/2026/07/08/trust-in-longevity-how-cybertrust-leverages-cip-to-provide-enterprise-grade-support-and-security-for-industrial-grade-linux-distributions): By Hirotaka Motai, Cybertrust Japan. We develop and provide "EMLinux," an industrial-grade commercial Embedded Linux, for the Japanese manufacturing industry
+- [Accelerating Industrial Innovation: How CIP Complements TI’s Industrial Processors](https://cip-project.org/blog/2026/06/25/accelerating-industrial-innovation-how-cip-complements-tis-industrial-processors): Enabling Secure and Reliable Edge Computing at the Intersection of Silicon and Open Source Software Authors: Vignesh Raghavendra and Khasim
+- [The Shift in OSS Strategy Driven by the Challenge of Long-Term Maintenance](https://cip-project.org/blog/2026/06/09/the-shift-in-oss-strategy-driven-by-the-challenge-of-long-term-maintenance): - The Evolution of an Industrial Linux Platform with the CIP Project - Author: Takehisa Katayama and Chris Paterson, Renesas
+
+## Pages
+- [Home](https://cip-project.org/): We create and evolve industrial grade Linux for long living products in civil infrastructure and industrial automation. Our mission is
+- [Press Release](https://cip-project.org/press-release)
+- [Civil Infrastructure Platform Celebrates 10 Years of Supporting Industrial Grade Linux](https://cip-project.org/press-release/civil-infrastructure-platform-celebrates-10-years-of-supporting-industrial-grade-linux): &nbsp; Decade of infrastructure safety for critical sectors like energy, manufacturing, and healthcare SAN FRANCISCO – April 28, 2026 – The Civil
+- [Protected: Home New](https://cip-project.org/home-new): ##### We create and evolve industrial grade Linux for long living products in civil infrastructure and industrial automation. Our mission
+- [Blog](https://cip-project.org/blog)
+
+## Venues
+- [Prague Congress Centre](https://cip-project.org/venue/prague-congress-centre)
+- [Frappant eV – The Victoria Barracks](https://cip-project.org/venue/frappant-ev-the-victoria-barracks)
+- [Toranomon Hills Forum](https://cip-project.org/venue/toranomon-hills-forum)
+- [Federal University of Technology — Paraná](https://cip-project.org/venue/federal-university-of-technology-parana)
+- [GREATER FT. LAUDERDALE/BROWARD COUNTY CONVENTION CENTER](https://cip-project.org/venue/greater-ft-lauderdale-broward-county-convention-center)
+
+## Organizers
+- [The Linux Foundation](https://cip-project.org/organizer/the-linux-foundation)
+
+## Events
+- [Civil Infrastructure Platform Mini Summit](https://cip-project.org/event/civil-infrastructure-platform-mini-summit): Join us to learn how the CIP community establishes an open source base layer of industrial grade software to enable
+
+## Categories
+- [In the News](https://cip-project.org/category/in-the-news)
+- [Blog](https://cip-project.org/category/blog)
+- [Announcement](https://cip-project.org/category/announcement)
+- [Events](https://cip-project.org/category/events)
+- [Work Group](https://cip-project.org/category/work-group)
+
+## Tags
+- [cip](https://cip-project.org/tag/cip)
+- [Open Source Summit](https://cip-project.org/tag/open-source-summit)
+- [security working group](https://cip-project.org/tag/security-working-group)
+- [working groups](https://cip-project.org/tag/working-groups)
+- [lava](https://cip-project.org/tag/lava)
+
+## Optional
+- [Sitemap index](https://cip-project.org/wp-sitemap.xml)

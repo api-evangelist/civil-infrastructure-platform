@@ -1,0 +1,64 @@
+generated: '2026-09-05'
+method: searched
+source: https://gitlab.com/cip-project/cip-lifecycle
+note: CIP publishes machine-readable lifecycle data for its own products in the cip-lifecycle repository
+  (cip-kernel.yml, cip-core.yml, kernel.yml, debian.yml plus a generated data/lifecycle.txt summary).
+  That is a product-support lifecycle, not an API-version lifecycle; the API section below is separate
+  and honestly thin.
+product_lifecycle:
+  machine_readable: true
+  repository: https://gitlab.com/cip-project/cip-lifecycle
+  files:
+  - cip-kernel.yml
+  - cip-core.yml
+  - kernel.yml
+  - debian.yml
+  - data/lifecycle.txt
+  policy: 'Super Long-Term Support (SLTS) — a two-phase model: phase1 tracks upstream LTS, phase2 is CIP-only
+    maintenance to a projected EOL 10+ years from release.'
+  policy_docs: https://wiki.linuxfoundation.org/civilinfrastructureplatform/cipkernelmaintenance
+  caveat: CIP states in the repository README that unmarked end dates are PROJECTED EOLs decided by each
+    project and may move.
+  supported_versions:
+  - product: CIP kernel
+    version: '4.4'
+    phase1: 2017-01-17/2022-02-01
+    phase2: 2022-02-01/2027-01-01
+  - product: CIP kernel
+    version: 4.19(-rt)
+    phase1: 2019-01-11/2024-12-01
+    phase2: 2024-12-01/2029-01-01
+  - product: CIP kernel
+    version: 5.10(-rt)
+    phase1: 2021-12-05/2026-12-01
+    phase2: 2026-12-01/2031-01-01
+  - product: CIP kernel
+    version: 6.1(-rt)
+    phase1: 2023-07-14/2027-12-01
+    phase2: 2027-12-01/2033-08-01
+  - product: CIP kernel
+    version: '6.12'
+    phase1: 2025-05-20/2028-12-01
+    phase2: 2028-12-01/2035-06-01
+api_lifecycle:
+  versioning:
+    scheme: uri-path namespace
+    current:
+    - tribe/events/v1
+    - tec/v1
+    docs: null
+    note: Neither namespace is announced or dated by CIP; both are versioned by the upstream plugin.
+  deprecation:
+    policy_url: null
+    sunset_header: false
+    note: No deprecation policy, Sunset/Deprecation header (RFC 8594) or migration guidance is published
+      for the REST surface. The legacy tribe/events/v1 namespace and the newer tec/v1 namespace are served
+      side by side with no stated retirement plan.
+  sla:
+    url: null
+    uptime_target: null
+  status_page: null
+  status_page_note: 'No CIP status page exists: status.cip-project.org does not resolve and https://cip-project.org/status
+    is 404. status.linuxfoundation.org is live but covers Linux Foundation platform services, not this
+    API, so no StatusPage pointer is emitted.'
+  deprecated_operations: []

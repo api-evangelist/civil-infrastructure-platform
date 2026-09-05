@@ -1,0 +1,18 @@
+generated: '2026-09-05'
+method: generated
+source: openapi/civil-infrastructure-platform-tec-v1-openapi-original.json
+note: One skill only. The CIP REST surface is a single read-oriented capability — the site event calendar
+  — and its write operations require credentials CIP has not issued publicly, so no write skill is authored.
+  Every operationId below was grepped out of the served tec/v1 document.
+skills:
+- file: civil-infrastructure-platform-read-events.md
+  name: Read CIP events, venues and organizers
+  api: openapi/civil-infrastructure-platform-tec-v1-openapi-original.json
+  operations:
+  - getEvents
+  - getEvent
+  - getVenues
+  - getVenue
+  - getOrganizers
+  - getOrganizer
+  - getSeries

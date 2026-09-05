@@ -1,0 +1,106 @@
+generated: '2026-09-05'
+method: derived
+status: candidate
+source: openapi/civil-infrastructure-platform-tec-v1-openapi-original.json
+note: CIP publishes NO MCP server. Searched the CIP site, the GitLab group (37 projects), the GitHub mirror
+  org (0 public repos), npm @modelcontextprotocol and the docs — nothing. The tools below are a CANDIDATE
+  list derived one-to-one from the operationIds in the tec/v1 OpenAPI document CIP serves at https://cip-project.org/wp-json/tec/v1/docs.
+  No endpoint is asserted because none exists.
+deployment:
+  mode: none
+  endpoint: null
+  install: null
+  package: null
+  auth: unknown
+  verified: derived
+server:
+  name: civil-infrastructure-platform
+  transport: null
+  url: null
+tool_count: 17
+tools:
+- name: getEvents
+  description: Retrieve Events
+  source_operation: openapi/civil-infrastructure-platform-tec-v1-openapi-original.json#getEvents
+  method: GET
+  path: /events
+- name: createEvent
+  description: Create an Event
+  source_operation: openapi/civil-infrastructure-platform-tec-v1-openapi-original.json#createEvent
+  method: POST
+  path: /events
+- name: getEvent
+  description: Retrieve an Event
+  source_operation: openapi/civil-infrastructure-platform-tec-v1-openapi-original.json#getEvent
+  method: GET
+  path: /events/{id}
+- name: updateEvent
+  description: Update an Event
+  source_operation: openapi/civil-infrastructure-platform-tec-v1-openapi-original.json#updateEvent
+  method: PUT
+  path: /events/{id}
+- name: deleteEvent
+  description: Delete an Event
+  source_operation: openapi/civil-infrastructure-platform-tec-v1-openapi-original.json#deleteEvent
+  method: DELETE
+  path: /events/{id}
+- name: getOrganizers
+  description: Get organizers
+  source_operation: openapi/civil-infrastructure-platform-tec-v1-openapi-original.json#getOrganizers
+  method: GET
+  path: /organizers
+- name: createOrganizer
+  description: Create an Organizer
+  source_operation: openapi/civil-infrastructure-platform-tec-v1-openapi-original.json#createOrganizer
+  method: POST
+  path: /organizers
+- name: getOrganizer
+  description: Retrieve an Organizer
+  source_operation: openapi/civil-infrastructure-platform-tec-v1-openapi-original.json#getOrganizer
+  method: GET
+  path: /organizers/{id}
+- name: updateOrganizer
+  description: Update an Organizer
+  source_operation: openapi/civil-infrastructure-platform-tec-v1-openapi-original.json#updateOrganizer
+  method: PUT
+  path: /organizers/{id}
+- name: deleteOrganizer
+  description: Delete an Organizer
+  source_operation: openapi/civil-infrastructure-platform-tec-v1-openapi-original.json#deleteOrganizer
+  method: DELETE
+  path: /organizers/{id}
+- name: getVenues
+  description: Get venues
+  source_operation: openapi/civil-infrastructure-platform-tec-v1-openapi-original.json#getVenues
+  method: GET
+  path: /venues
+- name: createVenue
+  description: Create a Venue
+  source_operation: openapi/civil-infrastructure-platform-tec-v1-openapi-original.json#createVenue
+  method: POST
+  path: /venues
+- name: getVenue
+  description: Retrieve a Venue
+  source_operation: openapi/civil-infrastructure-platform-tec-v1-openapi-original.json#getVenue
+  method: GET
+  path: /venues/{id}
+- name: updateVenue
+  description: Update a Venue
+  source_operation: openapi/civil-infrastructure-platform-tec-v1-openapi-original.json#updateVenue
+  method: PUT
+  path: /venues/{id}
+- name: deleteVenue
+  description: Delete a Venue
+  source_operation: openapi/civil-infrastructure-platform-tec-v1-openapi-original.json#deleteVenue
+  method: DELETE
+  path: /venues/{id}
+- name: getOpenApiDocs
+  description: Get the documentation for the TEC REST API
+  source_operation: openapi/civil-infrastructure-platform-tec-v1-openapi-original.json#getOpenApiDocs
+  method: GET
+  path: /docs
+- name: getSeries
+  description: Retrieve Series
+  source_operation: openapi/civil-infrastructure-platform-tec-v1-openapi-original.json#getSeries
+  method: GET
+  path: /series

@@ -1,0 +1,69 @@
+generated: '2026-09-05'
+method: searched
+source: https://www.bestpractices.dev/projects/10564.json, https://gitlab.com/cip-project/cip-documents/-/tree/master/security,
+  live contract probes
+standards:
+- id: openapi-3.0
+  conforms: true
+  evidence: https://cip-project.org/wp-json/tec/v1/docs declares openapi 3.0.4; https://cip-project.org/wp-json/tribe/events/v1/doc
+    declares openapi 3.0.0
+- id: rfc9727-api-catalog
+  conforms: true
+  evidence: https://www.cip-project.org/.well-known/api-catalog returns 200 application/linkset+json with
+    a service-desc pointing at https://cip-project.org/wp-json/
+- id: llmstxt
+  conforms: true
+  evidence: https://cip-project.org/llms.txt returns 200 text/plain in llms.txt format
+- id: http-basic-auth
+  conforms: true
+  evidence: components.securitySchemes.BasicAuth (type http, scheme basic) in the tec/v1 document
+- id: oauth2
+  conforms: false
+  evidence: no oauth2 securityScheme in any served contract; no /.well-known/oauth-authorization-server
+    (404)
+- id: oidc
+  conforms: false
+  evidence: /.well-known/openid-configuration returns 404 on cip-project.org
+- id: rfc9457-problem-details
+  conforms: false
+  evidence: errors use the WordPress {code,message,data.status} envelope, not application/problem+json
+- id: rfc8594-sunset-header
+  conforms: false
+  evidence: no Sunset or Deprecation header documented or observed
+- id: idempotency
+  conforms: false
+  evidence: 'no idempotency key mechanism in any served contract (conventions/…-conventions.yml idempotency.coverage:
+    none)'
+- id: pagination
+  conforms: true
+  evidence: page/per_page parameters plus X-WP-Total and X-WP-TotalPages response headers
+- id: rfc9116-security-txt
+  conforms: false
+  evidence: /.well-known/security.txt returns 404 on cip-project.org
+- id: openssf-best-practices
+  conforms: true
+  level: gold
+  evidence: https://www.bestpractices.dev/projects/10564 — badge_level gold, 100% at all three tiers,
+    last updated 2026-03-17
+domain_standards:
+- id: iec-62443-4-2
+  conforms: partial
+  contract_declared: false
+  evidence: CIP publishes per-foundational-requirement gap analyses (FR-1 through FR-7) plus threat modelling,
+    secure coding guidelines and a hardening guide at https://gitlab.com/cip-project/cip-documents/-/tree/master/security
+    and https://www.cip-project.org/about/security-iec-62443-4-2
+  note: 'This is a DOCUMENTED alignment for the CIP base layer, not a signature carried inside a machine-readable
+    contract. It is recorded here because IEC 62443 is the industrial-control security standard for CIP''s
+    market, but it must not be read as a contract-declared conformance: nothing in the served OpenAPI
+    documents references it.'
+- id: iec-62443-4-1
+  conforms: partial
+  contract_declared: false
+  evidence: CIP Security working group charter and process documents at https://wiki.linuxfoundation.org/civilinfrastructureplatform/cipsecurity
+compliance_program:
+  published: true
+  kind: OpenSSF Best Practices badge (self-assessed, publicly reviewable)
+  url: https://www.bestpractices.dev/projects/10564
+  level: gold
+  note: CIP holds no SOC 2 / ISO 27001 / PCI / FedRAMP certification — it is a Linux Foundation collaborative
+    project, not a SaaS vendor. The OpenSSF Gold badge is the published compliance attestation.

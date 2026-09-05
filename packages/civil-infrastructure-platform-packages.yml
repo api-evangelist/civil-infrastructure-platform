@@ -1,0 +1,54 @@
+generated: '2026-09-05'
+method: searched
+source: registry.npmjs.org, pypi.org, and the CIP GitLab group (37 projects) — searched 2026-09-05
+package_count: 0
+official_sdk_count: 0
+packages: []
+note: 'CIP ships no client SDK for any API. It is a Linux Foundation collaborative project whose deliverables
+  are source trees and OS images, not client libraries: the SLTS kernel (git.kernel.org / gitlab.com/cip-project/cip-kernel/linux-cip),
+  Debian-derived CIP Core images built with Isar (gitlab.com/cip-project/cip-core/isar-cip-core), and
+  Python tooling that is run in-repo rather than published (cip-lifecycle/parse.py, cip-kernel-sec). Probed
+  npm and PyPI for swupdate, isar-cip-core and cip-kernel-sec — 404 on both registries for all three.
+  No SDKs pointer is emitted because no SDK exists. version and published are null across the board because
+  there is no registry artifact to read them from.'
+checked_registries:
+- registry: npm
+  queried:
+  - swupdate
+  - isar-cip-core
+  - cip-kernel-sec
+  result: '404'
+  version: null
+  published: null
+- registry: pypi
+  queried:
+  - swupdate
+  - isar-cip-core
+  - cip-kernel-sec
+  result: '404'
+  version: null
+  published: null
+source_distribution:
+- name: linux-cip
+  kind: git
+  url: https://gitlab.com/cip-project/cip-kernel/linux-cip
+  registry: git
+  version: null
+  published: null
+  note: SLTS kernel mirror; canonical tree is git.kernel.org/pub/scm/linux/kernel/git/cip/linux-cip.git.
+    Versions are kernel branches (4.4, 4.19, 5.10, 6.1, 6.12), tracked in lifecycle/.
+- name: isar-cip-core
+  kind: git
+  url: https://gitlab.com/cip-project/cip-core/isar-cip-core
+  registry: git
+  version: null
+  published: null
+  note: Debian/Isar layer producing CIP Core reference images; no tagged registry release to read a version
+    from.
+- name: cip-kernel-sec
+  kind: git
+  url: https://gitlab.com/cip-project/cip-kernel/cip-kernel-sec
+  registry: git
+  version: null
+  published: null
+  note: Linux kernel CVE tracker used by the CIP Security working group.

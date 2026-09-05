@@ -4,111 +4,33 @@ schema: https://raw.githubusercontent.com/api-evangelist/interface-research/main
 provider: Civil Infrastructure Platform
 providerId: civil-infrastructure-platform
 created: '2026-05-04'
-# Provenance stamped 2026-08-11: this artifact was written by the API Evangelist
-# bulk sweep dated 2026-05-04, not harvested from the provider. See roadmap#35.
-method: generated
-modified: '2026-05-04'
-tags:
-  - Embedded
-  - Industrial
-  - Infrastructure
-  - Linux
-  - Linux Foundation
-  - Long-Term Support
-  - Open Source
-  - Rate Limiting
-  - Quotas
-  - Throttling
-description: Machine-readable rate limit definitions for the Civil Infrastructure Platform API surface.
-  Captures per-tier quotas, burst behavior, response signaling, and recovery semantics. Defaults are scaffold
-  values to be replaced with published provider limits.
+modified: '2026-09-05'
+generated: '2026-09-05'
+method: probed
+source: https://cip-project.org/wp-json/tribe/events/v1/events?per_page=1
+note: 'REPLACES a 2026-05-04 bulk-sweep scaffold that invented X-RateLimit-* headers and three tiers of
+  per-minute and per-month quotas none of which CIP publishes. Probed a live unauthenticated 200 on the
+  events endpoint: no RateLimit-*, no X-RateLimit-*, no Retry-After, no 429 contract in any of the three
+  served OpenAPI documents. An honest zero.'
+limit_count: 0
+limits: []
 headers:
-  limit: X-RateLimit-Limit
-  remaining: X-RateLimit-Remaining
-  reset: X-RateLimit-Reset
-  retryAfter: Retry-After
-  policy: RateLimit-Policy
+  limit: null
+  remaining: null
+  reset: null
+  retryAfter: null
+  policy: null
+headers_observed:
+- 'access-control-expose-headers: X-WP-Total, X-WP-TotalPages, Link'
+- 'cache-control: public, max-age=604800'
+headers_observed_note: Those are pagination and caching headers, not rate-limit signalling.
 responseCodes:
-  throttled: 429
-  quotaExceeded: 429
-  serviceUnavailable: 503
-limits:
-  - tier: free
-    name: Free Tier Default
-    scope: api-key
-    metric: requests_per_minute
-    limit: 10
-    burst: 20
-    timeFrame: minute
-    applies:
-      - CIP SLTS Kernel
-      - CIP Core Packages
-      - CIP Software Update
-      - CIP Security
-      - CIP Testing
-  - tier: free
-    name: Free Tier Monthly Quota
-    scope: api-key
-    metric: requests_per_month
-    limit: 1000
-    timeFrame: month
-    applies:
-      - CIP SLTS Kernel
-      - CIP Core Packages
-      - CIP Software Update
-      - CIP Security
-      - CIP Testing
-  - tier: professional
-    name: Professional Tier Default
-    scope: api-key
-    metric: requests_per_minute
-    limit: 100
-    burst: 200
-    timeFrame: minute
-    applies:
-      - CIP SLTS Kernel
-      - CIP Core Packages
-      - CIP Software Update
-      - CIP Security
-      - CIP Testing
-  - tier: professional
-    name: Professional Tier Monthly Quota
-    scope: api-key
-    metric: requests_per_month
-    limit: 100000
-    timeFrame: month
-    applies:
-      - CIP SLTS Kernel
-      - CIP Core Packages
-      - CIP Software Update
-      - CIP Security
-      - CIP Testing
-  - tier: enterprise
-    name: Enterprise Negotiated Limit
-    scope: contract
-    metric: requests_per_minute
-    limit: 1000
-    burst: 5000
-    timeFrame: minute
-    applies:
-      - CIP SLTS Kernel
-      - CIP Core Packages
-      - CIP Software Update
-      - CIP Security
-      - CIP Testing
-policies:
-  - name: Backoff Strategy
-    description: Clients should implement exponential backoff with jitter, honoring the Retry-After header
-      when present.
-  - name: Burst Handling
-    description: Short bursts above the steady-state limit are tolerated up to the documented burst ceiling
-      before throttling engages.
-  - name: Quota Reset
-    description: Monthly quotas reset at the start of each calendar month in UTC. Per-minute and per-second
-      windows reset on a sliding-window basis.
-  - name: Fair Use
-    description: Even on uncapped enterprise tiers, sustained usage that materially impacts shared infrastructure
-      may be subject to fair-use throttling.
+  throttled: null
+  quotaExceeded: null
+  serviceUnavailable: null
+exhaustion_status: null
+documented: false
+documentation_url: null
 maintainers:
-  - FN: Kin Lane
-    email: kin@apievangelist.com
+- FN: Kin Lane
+  email: kin@apievangelist.com

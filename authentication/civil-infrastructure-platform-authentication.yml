@@ -1,0 +1,12 @@
+generated: '2026-09-05'
+method: derived
+source: openapi/civil-infrastructure-platform-tec-v1-openapi-original.json
+summary:
+  types:
+  - http
+schemes:
+- name: BasicAuth
+  type: http
+  scheme: basic
+  sources:
+  - openapi/civil-infrastructure-platform-tec-v1-openapi-original.json

@@ -1,0 +1,134 @@
+generated: '2026-09-05'
+method: searched
+source: live probes 2026-09-05
+note: 'Probed every host the record knows: the registrable domain and www, the docs host, and the API
+  host. wiki.linuxfoundation.org sits behind a Cloudflare bot challenge (403 "Just a moment...") on every
+  path, including the negative control, so no conclusion is recorded for that host. www.cip-project.org
+  301s to cip-project.org; both were probed and the apex is authoritative.'
+path_echo_control: passed
+hit_count: 2
+hosts:
+- host: https://www.cip-project.org
+  documents:
+  - path: /.well-known/api-catalog
+    status: 200
+    file: civil-infrastructure-platform-api-catalog.json
+    content_type: application/linkset+json
+    note: RFC 9727 linkset; service-desc points at https://cip-project.org/wp-json/
+  - path: /llms.txt
+    status: 200
+    file: ../llms/civil-infrastructure-platform-llms.txt
+    content_type: text/plain
+    note: Real llms.txt, not the .well-known surface; recorded here for completeness and saved under llms/
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/aauth-resource.json
+    status: 404
+  - path: /.well-known/ucp.json
+    status: 404
+  - path: /.well-known/acp.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+  - path: /.well-known/apis.json
+    status: 404
+  - path: /apis.json
+    status: 404
+  - path: /apis.yml
+    status: 404
+  - path: /.well-known/civil-infrastructure-platform-negative-control-7f3ab91c.json
+    status: 404
+    note: negative control — 404 as required, this host does not echo paths
+- host: https://cip-project.org
+  documents:
+  - path: /.well-known/api-catalog
+    status: 200
+    file: civil-infrastructure-platform-api-catalog.json
+    note: canonical location after the www 301
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/civil-infrastructure-platform-negcontrol-91ab77.json
+    status: 404
+    note: negative control — 404 as required
+- host: https://wiki.linuxfoundation.org
+  documents:
+  - path: /.well-known/security.txt
+    status: 403
+    note: Cloudflare bot challenge on every path including the negative control — inconclusive, not an
+      absence
+  - path: /.well-known/api-catalog
+    status: 403
+    note: bot challenge
+  - path: /.well-known/agent-card.json
+    status: 403
+    note: bot challenge
+  - path: /.well-known/agent.json
+    status: 403
+    note: bot challenge
+  - path: /.well-known/openid-configuration
+    status: 403
+    note: bot challenge
+  - path: /.well-known/oauth-authorization-server
+    status: 403
+    note: bot challenge
+  - path: /.well-known/oauth-protected-resource
+    status: 403
+    note: bot challenge
+  - path: /.well-known/ai-plugin.json
+    status: 403
+    note: bot challenge
+  - path: /.well-known/aauth-resource.json
+    status: 403
+    note: bot challenge
+  - path: /apis.json
+    status: 403
+    note: bot challenge
+  - path: /.well-known/apis.json
+    status: 403
+    note: bot challenge
+  - path: /llms.txt
+    status: 403
+    note: bot challenge
+  - path: /.well-known/lf-negative-control-91ab77.json
+    status: 403
+    note: negative control also challenged — host inconclusive
+- host: https://cip-documents.readthedocs.io
+  documents:
+  - path: /llms.txt
+    status: 404
+  - path: /.well-known/security.txt
+    status: 404
+discovered_surfaces:
+- kind: WordPress REST API root
+  url: https://cip-project.org/wp-json/
+  status: 200
+  file: civil-infrastructure-platform-wp-json-index.json
+  note: Named as service-desc by CIP's own /.well-known/api-catalog. 127 routes across 16 namespaces;
+    saved verbatim. The wp/v2 core namespace is disabled on this install (rest_no_route on /wp-json/wp/v2/).
+- kind: OpenAPI 3.0.0
+  url: https://cip-project.org/wp-json/tribe/events/v1/doc
+  status: 200
+  file: ../openapi/civil-infrastructure-platform-events-openapi-original.json
+- kind: OpenAPI 3.0.4
+  url: https://cip-project.org/wp-json/tec/v1/docs
+  status: 200
+  file: ../openapi/civil-infrastructure-platform-tec-v1-openapi-original.json
+- kind: OpenAPI 3.0.0
+  url: https://cip-project.org/wp-json/tribe/zapier/v1/doc
+  status: 200
+  file: ../openapi/civil-infrastructure-platform-zapier-openapi-original.json
+- kind: OpenAPI 3.0.0 (stub — describes only its own /doc path)
+  url: https://cip-project.org/wp-json/tribe/power-automate/v1/doc
+  status: 200
+  file: null
+  note: 'Not saved: the document declares a single self-referential /doc path and no callable surface.'
