@@ -218,8 +218,6 @@ common:
     url: https://www.cip-project.org/.well-known/api-catalog
   - type: LLMsTxt
     url: llms/civil-infrastructure-platform-llms.txt
-  - type: Authentication
-    url: authentication/civil-infrastructure-platform-authentication.yml
   - type: Conventions
     url: conventions/civil-infrastructure-platform-conventions.yml
   - type: ErrorCatalog
@@ -264,11 +262,21 @@ common:
     url: https://cip-project.org/feed
   - type: Twitter
     url: https://twitter.com/cip_project
+  - type: ChangeLog
+    url: changelog/civil-infrastructure-platform-changelog.yml
+  - type: X-MCPServerCandidate
+    url: mcp/civil-infrastructure-platform-mcp.yml
+  - type: APIReference
+    url: https://cip-project.org/wp-json/tec/v1/docs
+    name: Live self-served OpenAPI 3.0.4 reference for the CIP Events REST API
+  - type: GitHubOrganization
+    url: https://github.com/cip-project
+    name: CIP GitHub organization (0 public repos — the code lives on GitLab)
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
 x-enrichment:
   date: '2026-09-05'
   status: enriched
-  artifacts_added: 21
+  artifacts_added: 22
   pass: local-v3
