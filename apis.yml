@@ -175,6 +175,8 @@ apis:
   humanURL: https://wiki.linuxfoundation.org/civilinfrastructureplatform/cipkernelmaintenance
   baseURL: https://cip-project.org/wp-json/tec/v1
   tags:
+  - Event
+  tags_raw:
   - Events
   properties:
   - type: OpenAPI
