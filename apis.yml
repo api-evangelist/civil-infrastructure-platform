@@ -31,6 +31,9 @@ access: 3rd-Party
 position: Consuming
 specificationVersion: '0.23'
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/civil-infrastructure-platform.png
+x-docs-platform: sphinx
+x-docs-platform-confidence: medium
+x-docs-platform-checked: 2026-09-21
 tags:
 - Embedded
 - Industrial
