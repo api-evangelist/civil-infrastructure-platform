@@ -1,0 +1,26 @@
+openapi: 3.2.0
+info:
+  title: Civil Infrastructure Platform Doc API
+  version: 1.0.0
+  description: 'Operations tagged Doc across 2 of this provider''s published API definitions: civil-infrastructure-platform-events-openapi-original.json, civil-infrastructure-platform-zapier-openapi-original.json. Each path carries the servers of the definition it was published in.'
+servers:
+- url: https://cip-project.org/wp-json/tribe/events/v1/
+tags:
+- name: Doc
+paths:
+  /doc:
+    get:
+      responses:
+        '200':
+          description: Returns the documentation for The Events Calendar REST API in Swagger consumable format.
+      tags:
+      - Doc
+      summary: Get doc
+      x-summary-source: derived
+      operationId: getDoc
+      x-operation-id-source: derived
+    servers:
+    - url: https://cip-project.org/wp-json/tribe/events/v1/
+x-refined-from:
+- civil-infrastructure-platform-events-openapi-original.json
+- civil-infrastructure-platform-zapier-openapi-original.json

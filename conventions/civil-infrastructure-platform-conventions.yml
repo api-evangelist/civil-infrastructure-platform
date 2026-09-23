@@ -115,6 +115,39 @@ rate_limit_signaling:
 caching:
   cache_control: public, max-age=604800
   observed_on: GET https://cip-project.org/wp-json/tribe/events/v1/events
+event_surface:
+  kind: polling-triggers
+  webhooks: false
+  asyncapi: false
+  note: >-
+    CIP serves NO webhook or event-streaming surface. There is no callback
+    registration endpoint, no subscription resource and no delivery-retry
+    contract anywhere in the 127 routes the WordPress REST index advertises,
+    and https://cip-project.org/asyncapi.yaml is 404. What does exist is a set
+    of POLLING trigger endpoints published by the plugin's Zapier and Power
+    Automate integrations — an automation client GETs them on a schedule and
+    diffs the result. That is an integration surface, not an event surface, so
+    no AsyncAPI or Webhooks pointer is emitted.
+  polling_triggers:
+    - GET /wp-json/tribe/zapier/v1/new-events
+    - GET /wp-json/tribe/zapier/v1/updated-events
+    - GET /wp-json/tribe/zapier/v1/canceled-events
+    - GET /wp-json/tribe/zapier/v1/find-events
+    - GET /wp-json/tribe/power-automate/v1/new-events
+    - GET /wp-json/tribe/power-automate/v1/updated-events
+    - GET /wp-json/tribe/power-automate/v1/canceled-events
+  trigger_auth: >-
+    access_token query parameter — required on the Zapier triggers, optional on
+    the Power Automate ones. Issued through GET /wp-json/tribe/zapier/v1/authorize,
+    which takes consumer_id and consumer_secret.
+  evidence:
+    - url: https://cip-project.org/wp-json/
+      status: 200
+      note: route index listing all seven trigger routes, saved to well-known/
+    - url: https://cip-project.org/asyncapi.yaml
+      status: 404
+    - url: https://cip-project.org/wp-json/tribe/webhooks/v1
+      status: 404
 cross_links:
   errors: errors/civil-infrastructure-platform-problem-types.yml
   lifecycle: lifecycle/civil-infrastructure-platform-lifecycle.yml
