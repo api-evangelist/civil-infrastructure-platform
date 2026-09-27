@@ -41,7 +41,7 @@ tags:
 - Linux
 - Linux Foundation
 - Long-Term Support
-- Open-Source
+- Open Source
 tags_raw:
 - Embedded
 - Industrial
@@ -50,6 +50,7 @@ tags_raw:
 - Linux Foundation
 - Long-Term Support
 - Open Source
+- Open-Source
 description: 'The Civil Infrastructure Platform (CIP) is a Linux Foundation collaborative project that
   builds an industrial-grade open source base layer for civil infrastructure systems such as transportation,
   power generation and distribution, building and city management, industrial control, and healthcare
@@ -132,98 +133,20 @@ apis:
     type: Documentation
   description: The CIP Testing working group runs continuous-integration and hardware-in-the-loop testing
     on member-supplied boards to validate kernel and core packages against the SLTS branch.
-- aid: civil-infrastructure-platform:civil-infrastructure-platform-authorize-api
-  name: Civil Infrastructure Platform Authorize API
-  description: The Authorize API from Civil Infrastructure Platform — 1 operation(s) for authorize.
-  humanURL: https://wiki.linuxfoundation.org/civilinfrastructureplatform/cipkernelmaintenance
-  baseURL: https://cip-project.org/wp-json/tec/v1
+- aid: civil-infrastructure-platform:cip-project-org-website-wordpress-rest
+  name: Civil Infrastructure Platform Website (WordPress REST)
+  description: 'The public WordPress REST API (wp-json) of the Civil Infrastructure Platform website at
+    cip-project.org: the route index of the site''s content management system, catalogued as one site
+    surface rather than as separate APIs.'
+  baseURL: https://cip-project.org/wp-json
   tags:
-  - Authorize
+  - WordPress
+  x-surface: platform-generated
   properties:
-  - type: OpenAPI
-    url: openapi/civil-infrastructure-platform-authorize-api-openapi.yml
-- aid: civil-infrastructure-platform:civil-infrastructure-platform-categories-api
-  name: Civil Infrastructure Platform Categories API
-  description: The Categories API from Civil Infrastructure Platform — 2 operation(s) for categories.
-  humanURL: https://wiki.linuxfoundation.org/civilinfrastructureplatform/cipkernelmaintenance
-  baseURL: https://cip-project.org/wp-json/tec/v1
-  tags:
-  - Categories
-  properties:
-  - type: OpenAPI
-    url: openapi/civil-infrastructure-platform-categories-api-openapi.yml
-- aid: civil-infrastructure-platform:civil-infrastructure-platform-common-api
-  name: Civil Infrastructure Platform Common API
-  description: These operations are introduced by the Common library.
-  humanURL: https://wiki.linuxfoundation.org/civilinfrastructureplatform/cipkernelmaintenance
-  baseURL: https://cip-project.org/wp-json/tec/v1
-  tags:
-  - Common
-  properties:
-  - type: OpenAPI
-    url: openapi/civil-infrastructure-platform-common-api-openapi.yml
-- aid: civil-infrastructure-platform:civil-infrastructure-platform-doc-api
-  name: Civil Infrastructure Platform Doc API
-  description: The Doc API from Civil Infrastructure Platform — 1 operation(s) for doc.
-  humanURL: https://wiki.linuxfoundation.org/civilinfrastructureplatform/cipkernelmaintenance
-  baseURL: https://cip-project.org/wp-json/tec/v1
-  tags:
-  - Doc
-  properties:
-  - type: OpenAPI
-    url: openapi/civil-infrastructure-platform-doc-api-openapi.yml
-- aid: civil-infrastructure-platform:civil-infrastructure-platform-events-api
-  name: Civil Infrastructure Platform Events API
-  description: The Events API from Civil Infrastructure Platform — 7 operation(s) for events.
-  humanURL: https://wiki.linuxfoundation.org/civilinfrastructureplatform/cipkernelmaintenance
-  baseURL: https://cip-project.org/wp-json/tec/v1
-  tags:
-  - Event
-  tags_raw:
-  - Events
-  properties:
-  - type: OpenAPI
-    url: openapi/civil-infrastructure-platform-events-api-openapi.yml
-- aid: civil-infrastructure-platform:civil-infrastructure-platform-events-pro-api
-  name: Civil Infrastructure Platform Events Pro API
-  description: These operations are introduced by Events Pro.
-  humanURL: https://wiki.linuxfoundation.org/civilinfrastructureplatform/cipkernelmaintenance
-  baseURL: https://cip-project.org/wp-json/tec/v1
-  tags:
-  - Events Pro
-  properties:
-  - type: OpenAPI
-    url: openapi/civil-infrastructure-platform-events-pro-api-openapi.yml
-- aid: civil-infrastructure-platform:civil-infrastructure-platform-organizers-api
-  name: Civil Infrastructure Platform Organizers API
-  description: The Organizers API from Civil Infrastructure Platform — 3 operation(s) for organizers.
-  humanURL: https://wiki.linuxfoundation.org/civilinfrastructureplatform/cipkernelmaintenance
-  baseURL: https://cip-project.org/wp-json/tec/v1
-  tags:
-  - Organizers
-  properties:
-  - type: OpenAPI
-    url: openapi/civil-infrastructure-platform-organizers-api-openapi.yml
-- aid: civil-infrastructure-platform:civil-infrastructure-platform-tags-api
-  name: Civil Infrastructure Platform Tags API
-  description: The Tags API from Civil Infrastructure Platform — 2 operation(s) for tags.
-  humanURL: https://wiki.linuxfoundation.org/civilinfrastructureplatform/cipkernelmaintenance
-  baseURL: https://cip-project.org/wp-json/tec/v1
-  tags:
-  - Tags
-  properties:
-  - type: OpenAPI
-    url: openapi/civil-infrastructure-platform-tags-api-openapi.yml
-- aid: civil-infrastructure-platform:civil-infrastructure-platform-venues-api
-  name: Civil Infrastructure Platform Venues API
-  description: The Venues API from Civil Infrastructure Platform — 3 operation(s) for venues.
-  humanURL: https://wiki.linuxfoundation.org/civilinfrastructureplatform/cipkernelmaintenance
-  baseURL: https://cip-project.org/wp-json/tec/v1
-  tags:
-  - Venues
-  properties:
-  - type: OpenAPI
-    url: openapi/civil-infrastructure-platform-venues-api-openapi.yml
+  - type: Documentation
+    url: https://cip-project.org/wp-json
+  x-platform: wordpress
+  x-platform-surface: rest
 common:
 - type: Overlay
   url: overlays/civil-infrastructure-platform-tec-v1-overlay.yaml
