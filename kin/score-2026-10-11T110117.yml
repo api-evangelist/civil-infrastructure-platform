@@ -1,34 +1,32 @@
-# Kin Score artifact — civil-infrastructure-platform — 2026-09-08T232836
+# Kin Score artifact — civil-infrastructure-platform — 2026-10-11T110117
 # The API Evangelist rating (https://github.com/api-evangelist/kin-score). Generated; do not edit.
 ---
 kin_score:
   slug: civil-infrastructure-platform
-  schema_version: 0.20.0
-  scored_at: '2026-09-08'
-  run_ts: 2026-09-08T232836
-  composite: 52.4
+  schema_version: 0.23.0
+  scored_at: '2026-10-11'
+  run_ts: 2026-10-11T110117
+  composite: 39.9
   band: developing
   facets:
-    discoverability: 83.3
-    contract_quality: 65.8
-    governance: 63.6
+    discoverability: 71.4
+    contract_quality: 10.7
+    contract_governance: 59.1
     operational_transparency: 28.9
     developer_ergonomics: 37.5
-    commercial_clarity: 47.4
-    contract_governance: 63.6
     access_clarity: 47.4
   agent_readiness:
-    score: 29.7
-    band: agent-ready
+    score: 9.5
+    band: agent-aware
     dimensions:
-      spec_presence: true
+      spec_presence: false
       agentic_access: false
       reversibility_documented: false
       mcp_server: false
       auth_clarity: bearer
       idempotency: false
-      error_semantics: documented
-      openapi_examples: verified
+      error_semantics: derived
+      openapi_examples: false
       rate_limit_signal: documented
       event_surface_described: false
       agent_skills: derived
@@ -40,6 +38,12 @@ kin_score:
       protected_resource_metadata: false
       dynamic_client_registration: false
       agentic_commerce: false
+  regulatory:
+    applies: true
+    regime: Horizontal (data, software, accessibility, platform)
+    regime_id: horizontal
+    score: 35.3
+    matched_via: fallback
   provenance:
     mcp: derived
     skills: derived
