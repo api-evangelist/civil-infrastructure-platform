@@ -1,4 +1,4 @@
-# Civil Infrastructure Platform (civil-infrastructure-platform)
+# Civil Infrastructure Platform
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,86 +64,145 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-The Civil Infrastructure Platform (CIP) is a Linux Foundation collaborative project that builds an industrial-grade open source base layer for civil infrastructure systems including transportation, power generation and distribution, building and city management, industrial control, and healthcare equipment. CIP curates a Super Long-Term Support (SLTS) kernel and core user-space packages that can be maintained for more than ten years, plus working groups for security, software update, real-time, and testing.
+The Civil Infrastructure Platform (CIP) is a Linux Foundation collaborative project that builds an industrial-grade open source base layer for civil infrastructure systems such as transportation, power generation and distribution, building and city management, industrial control, and healthcare equipment. CIP curates a Super Long-Term Support (SLTS) kernel and core user-space packages that can be maintained for more than ten years, plus working groups for security (IEC 62443 alignment), software update, real-time, and testing. CIP's primary programmable interface is source code — the kernel, CIP Core images and tooling published through GitLab and Debian-derived package archives — and it publishes machine-readable product lifecycle data for those. CIP also serves one live REST API: its own event calendar at cip-project.org/wp-json, declared in an RFC 9727 /.well-known/api-catalog and described by OpenAPI documents the site serves itself.
 
-**URL:** [Visit APIs.json URL](https://raw.githubusercontent.com/api-evangelist/civil-infrastructure-platform/refs/heads/main/apis.yml)
+**Areas:** Embedded · Industrial · Infrastructure · Linux · Linux Foundation · Long-Term Support · Open Source
 
-## Scope
+## Civil Infrastructure Platform on APIs.io
 
-- **Type:** Index
-- **Position:** Consumer
-- **Access:** 3rd-Party
+Everything profiled for Civil Infrastructure Platform is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/civil-infrastructure-platform/](https://apis.io/providers/civil-infrastructure-platform/)** — or go straight to one of the APIs or properties below.
 
-## Tags:
+### APIs (6)
 
- - Embedded, Industrial, Infrastructure, Linux, Linux Foundation, Long-Term Support, Open Source
+- [CIP SLTS Kernel](https://apis.io/apis/civil-infrastructure-platform/cip-kernel/) — The CIP Kernel is a Super Long-Term Support (SLTS) Linux kernel branch maintained for ten or more years, providing a stable base for industrial systems that…
+- [CIP Core Packages](https://apis.io/apis/civil-infrastructure-platform/cip-core/) — CIP Core provides a curated set of Debian-derived user-space packages aligned with the SLTS kernel to deliver a complete reference platform for civil…
+- [CIP Software Update](https://apis.io/apis/civil-infrastructure-platform/cip-software-update/) — The CIP Software Update working group maintains tooling such as SWUpdate and hawkBit-based servers used to deliver secure over-the-air updates across…
+- [CIP Security](https://apis.io/apis/civil-infrastructure-platform/cip-security/) — The CIP Security working group aligns the CIP base layer with IEC 62443-4-1 and 62443-4-2 industrial cybersecurity requirements and tracks CVE handling…
+- [CIP Testing](https://apis.io/apis/civil-infrastructure-platform/cip-testing/) — The CIP Testing working group runs continuous-integration and hardware-in-the-loop testing on member-supplied boards to validate kernel and core packages…
+- [Civil Infrastructure Platform Website (WordPress REST)](https://apis.io/apis/civil-infrastructure-platform/cip-project-org-website-wordpress-rest/) — The public WordPress REST API (wp-json) of the Civil Infrastructure Platform website at cip-project.org: the route index of the site's content management…
 
-## Timestamps
+### Published properties
 
-- **Created:** 2026-03-16
-- **Modified:** 2026-04-23
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## APIs
+#### MCP servers (1)
 
-### CIP SLTS Kernel
-A Super Long-Term Support (SLTS) Linux kernel branch maintained for ten or more years, providing a stable base for industrial systems that must remain in service across multi-decade lifecycles.
+Model Context Protocol servers that expose the API to agents.
 
-**Human URL:** [https://wiki.linuxfoundation.org/civilinfrastructureplatform/cipkernelmaintenance](https://wiki.linuxfoundation.org/civilinfrastructureplatform/cipkernelmaintenance)
+- [civil-infrastructure-platform](https://apis.io/servers/civil-infrastructure-platform/civil-infrastructure-platform/)
 
-#### Tags:
+#### JSON-LD (1)
 
- - Embedded, Kernel, Linux, SLTS
+Linked-data contexts for the provider's vocabulary.
 
-### CIP Core Packages
-A curated set of Debian-derived user-space packages aligned with the SLTS kernel that delivers a complete reference platform for civil infrastructure devices.
+- [Civil Infrastructure Platform Context](https://apis.io/jsonld/civil-infrastructure-platform/civil-infrastructure-platform-context/)
 
-**Human URL:** [https://wiki.linuxfoundation.org/civilinfrastructureplatform/cipcore](https://wiki.linuxfoundation.org/civilinfrastructureplatform/cipcore)
+#### Overlays (3)
 
-#### Tags:
+OpenAPI overlays, including conversational phrasing for each operation.
 
- - Debian, Packages, Userspace
+- [Civil Infrastructure Platform Events Overlay](https://apis.io/overlays/civil-infrastructure-platform/civil-infrastructure-platform-events-overlay/)
+- [Civil Infrastructure Platform Tec V1 Overlay](https://apis.io/overlays/civil-infrastructure-platform/civil-infrastructure-platform-tec-v1-overlay/)
+- [Civil Infrastructure Platform Zapier Overlay](https://apis.io/overlays/civil-infrastructure-platform/civil-infrastructure-platform-zapier-overlay/)
 
-### CIP Software Update
-Tooling such as SWUpdate and hawkBit-based servers used to deliver secure over-the-air updates across long-lived industrial deployments.
+#### Governance rules (1)
 
-**Human URL:** [https://wiki.linuxfoundation.org/civilinfrastructureplatform/softwareupdate](https://wiki.linuxfoundation.org/civilinfrastructureplatform/softwareupdate)
+Spectral rulesets for the provider's contracts.
 
-#### Tags:
+- [Civil Infrastructure Platform API Rules](https://apis.io/rules/civil-infrastructure-platform/civil-infrastructure-platform-rules/)
 
- - OTA, Software Update, SWUpdate
+#### Security (3)
 
-### CIP Security
-Aligns the CIP base layer with IEC 62443-4-1 and 62443-4-2 industrial cybersecurity requirements and tracks CVE handling across the SLTS kernel and user-space.
+Authentication, trust centre, and vulnerability disclosure.
 
-**Human URL:** [https://wiki.linuxfoundation.org/civilinfrastructureplatform/cipsecurity](https://wiki.linuxfoundation.org/civilinfrastructureplatform/cipsecurity)
+- [Civil Infrastructure Platform Authentication](https://apis.io/security/civil-infrastructure-platform/civil-infrastructure-platform-authentication/)
+- [Civil Infrastructure Platform Domain Security](https://apis.io/security/civil-infrastructure-platform/civil-infrastructure-platform-domain-security/)
+- [Civil Infrastructure Platform Vulnerability Disclosure](https://apis.io/security/civil-infrastructure-platform/civil-infrastructure-platform-vulnerability-disclosure/)
 
-#### Tags:
+#### Plans and pricing (1)
 
- - IEC 62443, Industrial Security, Security
+Published plans, tiers and prices.
 
-### CIP Testing
-Continuous-integration and hardware-in-the-loop testing on member-supplied boards to validate kernel and core packages against the SLTS branch.
+- [Civil Infrastructure Platform Plans Pricing](https://apis.io/plans/civil-infrastructure-platform/civil-infrastructure-platform-plans-pricing/)
 
-**Human URL:** [https://wiki.linuxfoundation.org/civilinfrastructureplatform/ciptesting](https://wiki.linuxfoundation.org/civilinfrastructureplatform/ciptesting)
+#### Rate limits (1)
 
-#### Tags:
+Published request limits.
 
- - CI, LAVA, Testing
+- [Civil Infrastructure Platform Rate Limits](https://apis.io/rate-limits/civil-infrastructure-platform/civil-infrastructure-platform-rate-limits/)
 
-## Common Properties
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Civil Infrastructure Platform Finops](https://apis.io/finops/civil-infrastructure-platform/civil-infrastructure-platform-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
 - [Website](https://www.cip-project.org/)
-- [Wiki](https://wiki.linuxfoundation.org/civilinfrastructureplatform)
-- [GitLab](https://gitlab.com/cip-project)
+- [Documentation](https://cip-documents.readthedocs.io/)
+- [API reference](https://cip-project.org/wp-json/tec/v1/docs)
+- [Pricing](https://cip-project.org/about/join)
+- [Sign up](https://enrollment.lfx.linuxfoundation.org/?project=cip)
+- [Support](https://lists.cip-project.org/g/cip-dev)
+- [Blog](https://cip-project.org/blog/)
+- [Security](https://wiki.linuxfoundation.org/civilinfrastructureplatform/cipkernelmaintenance#security_fixes)
+- [Compliance](https://www.bestpractices.dev/projects/10564)
+- [Terms of service](https://www.linuxfoundation.org/terms)
+- [Privacy policy](https://www.linuxfoundation.org/privacy)
 - [GitHub](https://github.com/cip-project)
-- [Mailing List](https://lists.cip-project.org/g/cip-dev)
-- [Foundation](https://www.linuxfoundation.org/projects/civil-infrastructure-platform/)
-- [JSON-LD Context](json-ld/civil-infrastructure-platform-context.jsonld)
-- [Spectral Ruleset](rules/civil-infrastructure-platform-rules.yml)
-- [Naftiko Capabilities](capabilities/civil-infrastructure-platform-capabilities.yml)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
+**Kin Score 34.8** — thin · rubric 0.24.0 · scored 2026-10-17
 
-**Email:** kin@apievangelist.com
+| Facet | Score |
+|---|---|
+| Discoverability | 71.4 |
+| Contract quality | 10.7 |
+| Contract governance | 29.5 |
+| Operational transparency | 28.9 |
+| Developer ergonomics | 37.5 |
+| Access clarity | 39.5 |
+
+**Agent readiness 9.5** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | derived (partial credit) |
+| OpenAPI Examples | — |
+| Rate Limit Signal | documented (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | derived (partial credit) |
+| Well Known Catalog | yes |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 35.3** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/civil-infrastructure-platform/](https://apis.io/providers/civil-infrastructure-platform/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Civil Infrastructure Platform: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/civil-infrastructure-platform/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
